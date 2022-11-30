@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class Request {
 
-    long id;
-    int requestedCapacity;
+    private long id;
+    private int requestedCapacity;
 }

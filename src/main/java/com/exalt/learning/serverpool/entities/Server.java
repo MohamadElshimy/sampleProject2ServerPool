@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @Data
 public class Server {
 
-    int id;
-    ServerState state;
-    int maxCapacity;
-    int usedCapacity;
-    int unusedCapacity;
+    private int id;
+    private ServerState state;
+    private int maxCapacity;
+    private int usedCapacity;
+    private int unusedCapacity;
 
     @Override
     public String toString() {

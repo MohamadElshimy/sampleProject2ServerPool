@@ -11,8 +11,8 @@ import java.util.List;
 @Service
 public class ServerPoolService {
 
-    static List<Server> allServers = new ArrayList<>();
-    int lastServerId = 0;
+    private static List<Server> allServers = new ArrayList<>();
+    private int lastServerId = 0;
 
     public String requestServersState() {
         return prepareOutput();
