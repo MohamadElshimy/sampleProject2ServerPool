@@ -14,9 +14,8 @@ public class Server {
     int maxCapacity;
     int usedCapacity;
     int unusedCapacity;
-    int reservedCapacity;
-    int freeCapacity;
 
+    @Override
     public String toString() {
         return "Server " + this.getId() + " has free capacity of " + this.getUnusedCapacity();
     }

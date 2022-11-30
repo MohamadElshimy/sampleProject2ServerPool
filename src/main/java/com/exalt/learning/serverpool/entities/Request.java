@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Request extends Thread {
+public class Request {
 
     long id;
     int requestedCapacity;
