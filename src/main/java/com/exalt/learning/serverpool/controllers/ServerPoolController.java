@@ -20,7 +20,7 @@ public class ServerPoolController {
     }
 
     @PostMapping("/servers")
-    public String requestServerCapacity(@RequestBody Request request) throws InterruptedException {
+    public String requestServerCapacity(@RequestBody Request request) {
         return serverPoolService.requestServerCapacity(request);
     }
 

@@ -18,7 +18,7 @@ public class ServerPoolService {
         return prepareOutput();
     }
 
-    public String requestServerCapacity(Request request) throws InterruptedException {
+    public String requestServerCapacity(Request request) {
 
         for(Server server : allServers) {
             if(server.getState() == ServerState.ACTIVE && server.getUnusedCapacity() >= request.getRequestedCapacity()) {
